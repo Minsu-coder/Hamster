@@ -46,7 +46,7 @@ body {
     font-size: 25px;
 }
 
-.btn-1 {
+#nextbutton {
     position: relative;
     left: 60px;
     top: 140px;

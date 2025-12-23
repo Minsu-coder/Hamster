@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do-list</title>
+    <title>TEAM-2</title>
+    <link rel="stylesheet" href="to-do-list.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="start">
-            <h1>PLANNER</h1>
-            <input type="text" id="name" placeholder="Home" />
-            <button id="button">NEXT</button>
+    <section class="section-1">
+        <form>
+            <div class="container">
+                <div class="card"></div>
+                <div class="wrapper">
+                    <h1>PLANNER</h1>
+                </div>
+
+                <label for="fname"></label>
+                <input type="text" id="fname" placeholder="Username">
+                <button id="nextbutton">NEXT</button>
+            </div>
+            </div>
+        </form>
+    </section>
+    <section class="container-2" id="list-slide">
+        <div class="grid-layout">
+            <div class="to-do-list">
+                <h2>DAILY PLANNER</h2>
+                <!-- list -->
+                <ul id="card-2">
+                    <li>
+                        <input id="list" />
+                    </li>
+                    <button id="addlist"  onclick="addlist()"> + </button>
+                    <button id="delList" onclick="remove()"> - </button>
+                </ul>
+                <div class="card-3"></div>
+                <div class="card-4"></div>
+                <div class="card-5"></div>
+            </div>
         </div>
-        <div class="DailyPlanner">
-            <h2>DAILY PLANNER</h2>
-            
-        </div>
-    </div>
+
+    </section>
+
+
+    <script src="list.js"> </script>
 </body>
+
 </html>
