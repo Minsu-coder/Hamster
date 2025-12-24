@@ -6,32 +6,41 @@
 }
 
 body {
-    background-image: url(background.jpeg);
-    background: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 .container {
-    
-    background-color: #efc5cf;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+
     width: 800px;
     height: 1000px;
 }
+
 .card {
     position: relative;
-    left: 200px;
+    left: 140px;
     top: 300px;
     background-color: #fae8ed;
-  width: 400px;
-  height: 300px;
-  border-radius: 25px;
-  text-align: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 100px;
+    backdrop-filter: blur(10px);
+    background: rgb(253, 231, 236);
+    border-radius: 25px;
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(255, 182, 193);
 }
+
 #fname {
-     position: relative;
-    left: 260px;
+    position: relative;
+    left: 200px;
     top: 70px;
     width: 250px;
     height: 48px;
@@ -39,16 +48,17 @@ body {
     border-radius: 20px;
     padding: 15px;
 }
+
 .wrapper {
     position: relative;
-    left: 270px;
+    left: 210px;
     top: 60px;
     font-size: 25px;
 }
 
 #nextbutton {
     position: relative;
-    left: 60px;
+    left: 1px;
     top: 140px;
     width: 150px;
     height: 50px;
@@ -56,4 +66,86 @@ body {
     border-radius: 20px;
     background-color: white;
     color: black;
+}
+
+.container-2 {
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 1000px;
+}
+
+.daily-planner {
+    position: relative;
+    left: 180px;
+    top: 60px;
+    font-size: 25px;
+}
+
+#card-2 {
+    position: relative;
+    left: 10px;
+    top: 100px;
+    background-color: #fae8ed;
+    width: 300px;
+    height: 800px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 100px;
+    backdrop-filter: blur(10px);
+    background: rgb(253, 231, 236);
+    border-radius: 25px;
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(255, 182, 193);
+}
+
+
+#list {
+    background-color: rgb(253, 231, 236);
+    width: 200px;
+    border-radius: 10px;
+}
+
+#addlist {
+    position: relative;
+    left: 130px;
+    top: 650px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+#delList {
+    position: relative;
+    left: 30px;
+    top: 650px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+#card-3 {
+    position: relative;
+    left: 350px;
+    bottom: 700px;
+    height: 400px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 100px;
+    backdrop-filter: blur(10px);
+    background: rgb(253, 231, 236);
+    border-radius: 25px;
+    border-color: rgb(255, 182, 193);
 }

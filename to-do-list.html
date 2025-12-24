@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="to-do-list.css">
 </head>
 
-<body>
+<body style="display: grid;">
     <section class="section-1">
         <form>
             <div class="container">
@@ -24,22 +24,25 @@
             </div>
         </form>
     </section>
-    <section class="container-2" id="list-slide">
+    <section class="container-2" id="list-slide" style="display: flex;">
         <div class="grid-layout">
-            <div class="to-do-list">
+            <div class="daily-planner">
                 <h2>DAILY PLANNER</h2>
-                <!-- list -->
+            </div>
+            <div class="to-do-list">
                 <ul id="card-2">
+                     <h3>To Do</h3>
                     <li>
                         <input id="list" />
                     </li>
-                    <button id="addlist"  onclick="addlist()"> + </button>
+                    <button id="addlist" onclick="addlist()"> + </button>
                     <button id="delList" onclick="remove()"> - </button>
                 </ul>
-                <div class="card-3"></div>
-                <div class="card-4"></div>
-                <div class="card-5"></div>
             </div>
+            <div id="card-3">
+                <h4>Note</h4>
+            </div>
+            <div class="card-4"></div>
         </div>
 
     </section>
