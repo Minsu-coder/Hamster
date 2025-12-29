@@ -105,6 +105,7 @@ body {
     background-color: rgb(253, 231, 236);
     width: 200px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 #addlist {
@@ -148,4 +149,8 @@ body {
     background: rgb(253, 231, 236);
     border-radius: 25px;
     border-color: rgb(255, 182, 193);
+}
+
+ul {
+    list-style: none;
 }

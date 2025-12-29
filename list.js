@@ -15,14 +15,16 @@ function addlist() {
     
     const li = document.createElement('li');
     li.textContent = value;
+
+
     const delBtn = document.createElement('addlist');
     delBtn.textContent = '';
-    // delBtn.style.marginLeft = '10px';
     delBtn.addEventListener('click', () =>  li.remove());
+
 
     li.appendChild(delBtn);
     ul.appendChild(li);
 
 
-    input.value = ''
+    input.value = '';
 }
