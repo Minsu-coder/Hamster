@@ -8,41 +8,64 @@
     <link rel="stylesheet" href="to-do-list.css">
 </head>
 
-<body style="display: grid;">
-    <section class="section-1">
-        <form>
-            <div class="container">
-                <div class="card"></div>
-                <div class="wrapper">
-                    <h1>PLANNER</h1>
-                </div>
+<body>
+    <section id="page1" class="page active">
 
-                <label for="fname"></label>
-                <input type="text" id="fname" placeholder="Username">
-                <button id="nextbutton">NEXT</button>
+        <div class="container">
+            <div class="card"></div>
+            <div class="wrapper">
+                <h1>PLANNER</h1>
             </div>
-            </div>
-        </form>
+
+            <label for="fname"></label>
+            <input type="text" id="fname" placeholder="Username">
+            <button type="button" id="toggleBtn">NEXT</button>
+        </div>
+
+
     </section>
-    <section class="container-2" id="list-slide" style="display: flex;">
+    <section class="page" id="page2">
         <div class="grid-layout">
+            <button type="button" id="toggleBtn2">«</button>
+
             <div class="daily-planner">
                 <h2>DAILY PLANNER</h2>
             </div>
             <div class="to-do-list">
+
                 <ul id="card-2">
-                     <h3>To Do</h3>
                     <li>
+                        <label for="list">To Do</label>
                         <input id="list" />
+
                     </li>
-                    <button id="addlist" onclick="addlist()"> + </button>
-                    <button id="delList" onclick="remove()"> - </button>
+
+                    <li>
+                        <button id="addlist" onclick="addlist()"> + </button>
+
+                    </li>
                 </ul>
+
             </div>
             <div id="card-3">
                 <h4>Note</h4>
+                <form>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                </form>
+
             </div>
-            <div class="card-4"></div>
+            <div class="card-4">
+                <h5>Mood</h5>
+                <div class="emoji">
+                    <button><img src="image copy 3.png" width="25px"></button>
+                    <button><img src="image copy 4.png" width="25px"></button>
+                    <button><img src="image copy 2.png" width="25px"></button>
+                    <button><img src="image.png" width="25px"></button>
+                    <button><img src="image copy.png" width="25px"></button>
+                </div>
+
+            </div>
         </div>
 
     </section>
